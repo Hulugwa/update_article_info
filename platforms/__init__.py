@@ -38,16 +38,15 @@ class DefaultValues:
 
     # 本机
     # read_path = '/Users/petezhang/Desktop/source-all.json'
-    result_path = 'data/news.json'
-    false_path = 'data/false.json'
-    rename_false = 'data/first_false.json'
-    no_match_path = 'data/no_match.json'
-    merge_path = 'data/results.xlsx'
+    # result_path = 'data/news.json'
+    # false_path = 'data/false.json'
+    # rename_false = 'data/first_false.json'
+    # no_match_path = 'data/no_match.json'
+    # merge_path = 'data/results.xlsx'
 
-    # # dev
-    # read_path = '/home/zhangxiang/linshi/data/source-all.json'
-    # result_path = '/home/zhangxiang/linshi/data/news.json'
-    # false_path = '/home/zhangxiang/linshi/data/false.json'
-    # rename_false = '/home/zhangxiang/linshi/data/first_false.json'
-    # no_match_path = '/home/zhangxiang/linshi/data/no_match.json'
-    # merge_path = '/home/zhangxiang/linshi/data/results.xlsx'
+    # dev
+    result_path = '/home/report/gen_report/update_article_info/data/news.json'
+    false_path = '/home/report/gen_report/update_article_info/data/false.json'
+    rename_false = '/home/report/gen_report/update_article_info/data/first_false.json'
+    no_match_path = '/home/report/gen_report/update_article_info/data/no_match.json'
+    merge_path = '/home/report/results.xlsx'
