@@ -38,16 +38,17 @@ def update(input_path, output_path, field=DefaultValues.field):
     print("开始抓取失败链接")
 
     # 重新抓取一遍失败链接
-    try:
-        pool = mp.Pool(10)
-        with open(DefaultValues.false_path, 'r') as f:
-            lines = f.readlines()
-            for line in lines:
-                pool.apply_async(judge_url.judge_url, args=(line,))
-            pool.close()
-            pool.join()
-    except:
-        traceback.print_exc()
+    if os.path.exists(DefaultValues.false_path):
+        try:
+            pool = mp.Pool(10)
+            with open(DefaultValues.false_path, 'r') as f:
+                lines = f.readlines()
+                for line in lines:
+                    pool.apply_async(judge_url.judge_url, args=(line,))
+                pool.close()
+                pool.join()
+        except:
+            traceback.print_exc()
     print('失败链接抓取完成')
     print('----------------------------------')
     print('开始合并文件')

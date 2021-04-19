@@ -1,0 +1,3 @@
+[console_scripts]
+update-article-info = update_article_info.__init__:commandline
+
