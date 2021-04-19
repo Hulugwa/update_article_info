@@ -66,5 +66,9 @@ def update(input_path, output_path, field=DefaultValues.field):
         os.remove(DefaultValues.item_path)
 
 
-if __name__ == '__main__':
+def commandline():
     fire.Fire(update)
+
+
+if __name__ == '__main__':
+    commandline()

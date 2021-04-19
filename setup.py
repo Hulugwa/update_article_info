@@ -7,5 +7,10 @@ setup(
     include_package_data=True,
     packages=find_packages(),
     author_email='zzxxang@126.com',
-    url=None
+    url=None,
+    entry_points={
+        'console_scripts': [
+            'update-article-info = update_article_info.__init__:commandline'
+        ]
+    }
 )
